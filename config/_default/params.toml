@@ -1,2 +1,5 @@
 author = "falej"
 description = "My Hugo New Site"
+
+themeVariant = "aws"
+showVisitedLinks = true
