@@ -1,0 +1,5 @@
+[en]
+    languageName = "English"
+    contentDir = "content/en"
+    title = "My Hugo New Site"
+    weight = 1
