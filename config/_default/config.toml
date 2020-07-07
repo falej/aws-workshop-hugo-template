@@ -3,3 +3,5 @@ title = "My Hugo New Site"
 languageCode = "en-us"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir= true
+
+theme = "learn"
