@@ -33,6 +33,7 @@
 
 body {
     color: var(--MAIN-TEXT-color) !important;
+    font-family: "Amazon Ember", "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
 }
 
 textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus {
@@ -40,8 +41,14 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     box-shadow: none;
 }
 
+h1 {
+    text-transform: none !important;
+    font-family: "Amazon Ember", "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
 h2, h3, h4, h5 {
     color: var(--MAIN-TITLES-TEXT-color) !important;
+    font-family: "Amazon Ember", "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
 }
 
 a {
@@ -56,8 +63,61 @@ a:hover {
     color: var(--MAIN-LINK-HOVER-color);
 }
 
+#sidebar {
+	background-color: var(--MENU-SECTIONS-BG-color);
+}
+
+#sidebar #header-wrapper {
+    background: var(--MENU-HEADER-BG-color);
+    color: var(--MENU-SEARCH-BOX-color);
+    border-color: var(--MENU-HEADER-BORDER-color);
+}
+
+#sidebar .searchbox {
+	border-color: var(--MENU-SEARCH-BOX-color);
+    background: var(--MENU-SEARCH-BG-color);
+}
+
+#sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
+    background: var(--MENU-SECTIONS-ACTIVE-BG-color);
+}
+
 #sidebar ul li.visited > a .read-icon {
-color: var(--MENU-VISITED-color) !important;
+    color: var(--MENU-VISITED-color) !important;
+}
+
+#sidebar ul li.active > a {
+    background: var(--MENU-SECTION-ACTIVE-CATEGORY-BG-color);
+    color: var(--MENU-SECTION-ACTIVE-CATEGORY-color) !important;
+}
+
+#sidebar ul.topics > li > a b {
+    color: var(--MENU-SECTION-ACTIVE-CATEGORY-TEXT-color) !important;
+    opacity: 1 !important;
+}
+
+#sidebar .searchbox * {
+    color: var(--MENU-SEARCH-BOX-ICONS-color);
+}
+
+#sidebar #shortcuts h3 {
+    font-family: "Amazon Ember", "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+}
+
+#sidebar hr {
+    border-color: var(--MENU-SECTION-HR-color);
+}
+
+#sidebar a:hover {
+    color: var(--MENU-SECTIONS-LINK-HOVER-color);
+}
+
+#sidebar a {
+    color: var(--MENU-SECTIONS-LINK-color);
+}
+
+#sidebar a b, #sidebar a i {
+    color: var(--MENU-SECTIONS-TEXT-color) !important;
 }
 
 #body a.highlight:after {
@@ -71,41 +131,6 @@ color: var(--MENU-VISITED-color) !important;
     transition: width 0.5s ease;
     background-color: var(--MAIN-LINK-HOVER-color);
 }
-#sidebar {
-	background-color: var(--MENU-SECTIONS-BG-color);
-}
-#sidebar #header-wrapper {
-    background: var(--MENU-HEADER-BG-color);
-    color: var(--MENU-SEARCH-BOX-color);
-    border-color: var(--MENU-HEADER-BORDER-color);
-}
-#sidebar .searchbox {
-	border-color: var(--MENU-SEARCH-BOX-color);
-    background: var(--MENU-SEARCH-BG-color);
-}
-#sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
-    background: var(--MENU-SECTIONS-ACTIVE-BG-color);
-}
-#sidebar .searchbox * {
-    color: var(--MENU-SEARCH-BOX-ICONS-color);
-}
-
-#sidebar a {
-    color: var(--MENU-SECTIONS-LINK-color);
-}
-
-#sidebar a:hover {
-    color: var(--MENU-SECTIONS-LINK-HOVER-color);
-}
-
-#sidebar ul li.active > a {
-    background: var(--MENU-SECTION-ACTIVE-CATEGORY-BG-color);
-    color: var(--MENU-SECTION-ACTIVE-CATEGORY-color) !important;
-}
-
-#sidebar hr {
-    border-color: var(--MENU-SECTION-HR-color);
-}
 
 #body .tags a.tag-link {
     background-color: var(--MENU-HEADER-BG-color);    
@@ -115,23 +140,12 @@ color: var(--MENU-VISITED-color) !important;
     border-right-color: var(--MENU-HEADER-BG-color);
 }
 
-/* Custom CSS */
-
 #TableOfContents > ul > li > a   {
     font-weight: lighter !important;
-  }
-  
-  #TableOfContents > ul > li > ul > li > a {
-    font-weight: lighter !important;
-  }
-
-#sidebar a b, #sidebar a i {
-    color: var(--MENU-SECTIONS-TEXT-color) !important;
 }
-
-#sidebar ul.topics > li > a b {
-    color: var(--MENU-SECTION-ACTIVE-CATEGORY-TEXT-color) !important;
-    opacity: 1 !important;
+  
+#TableOfContents > ul > li > ul > li > a {
+    font-weight: lighter !important;
 }
 
 #navigation a.nav-prev, #navigation a.nav-next {
@@ -140,4 +154,8 @@ color: var(--MENU-VISITED-color) !important;
 
 #navigation a.nav-prev:hover, #navigation a.nav-next:hover  {
     color: var(--NAV-ARROWS-HOVER-color) !important;
+}
+
+#chapter h3 {
+    font-family: "Amazon Ember", "Work Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
 }
