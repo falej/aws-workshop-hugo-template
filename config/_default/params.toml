@@ -3,3 +3,4 @@ description = "AWS Workshop"
 
 themeVariant = "aws"
 showVisitedLinks = true
+custom_css = ["css/styles.css"]
