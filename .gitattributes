@@ -1,0 +1,7 @@
+# ==================================================
+# Used to remove files from deployment using `git archive`
+# ==================================================
+
+# Git
+.gitattributes export-ignore
+.gitignore export-ignore
