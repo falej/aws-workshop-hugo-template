@@ -152,6 +152,14 @@ a:hover {
     background: var(--MENU-SECTIONS-ACTIVE-BG-color);
 }
 
+#sidebar ul.topics li.parent ul, #sidebar ul.topics > li.active ul {
+    display: none !important;
+}
+
+#sidebar ul.topics li.parent > ul {
+    display: block !important;
+}
+
 #sidebar ul li.visited > a .read-icon {
     color: var(--MENU-VISITED-color) !important;
 }
